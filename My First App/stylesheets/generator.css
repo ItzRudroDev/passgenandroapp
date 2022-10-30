@@ -1,0 +1,84 @@
+
+.main_nav {
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* font-size: 1.2rem; */
+    color: rgb(5, 139, 248);
+    background-color: rgb(238, 238, 238);
+}
+
+.generator_nav, .savedpass_nav {
+    width: 10rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_active {
+    border-bottom: 1px solid rgb(5, 139, 248);
+}
+
+.generator_container {
+    width: 100%;
+    margin-top: 5rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.generator_btn {
+    height: 2rem;
+    width: 15rem;
+    background-color: rgb(5, 139, 248);
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.password_display {
+    margin-top: 1rem;
+    width: 20rem;
+    height: 2.5rem;
+    border: none;
+    outline: none;
+    pointer-events: none;
+    border: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 16px;
+    letter-spacing: 2px;
+    background-color: rgb(236, 236, 236);
+}
+
+.password_copy_btn {
+    margin-top: 1rem;
+    width: 15rem;
+    height: 2rem;
+    background: rgb(0, 150, 0);
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.aboutMe {
+    width: 90%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+    font-size: 20px;
+}  

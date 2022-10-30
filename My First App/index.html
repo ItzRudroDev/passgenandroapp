@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/generator.css">
+    <link rel="stylesheet" href="stylesheets/savedpass.css">
+    <title>Password Generator App by Rudro</title>
+</head>
+
+<body>
+    <nav class="main_nav">
+        <div class="generator_nav nav_active">Generator</div>
+        <div class="savedpass_nav">Saved Passwords</div>
+    </nav>
+    <section id="generator_page">
+
+        <div class="generator_container">
+            <button class="generator_btn">Generate a Password</button>
+            <input type="text" class="password_display" readonly>
+            <button class="password_copy_btn">Copy Password and Save it</button>
+        </div>
+
+        <div class="aboutMe">
+            Hello I am Rudro Sarkar. This is my first Andoid project using HTML CSS and JAVASCRIPT. Estimated work time
+            spent on this app 1 hours 13 minutes.<br> --Thank you!
+        </div>
+    </section>
+
+    <section id="savedpass_page" style="display: none;">
+        <div class="saved_pass_wrapper">
+        </div>
+    </section>
+
+    <script src="scripts/dexie.min.js"></script>
+    <script src="scripts/manage.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
